@@ -1,0 +1,17 @@
+entity decoder_2_4 is
+	port (
+		a: in bit;
+		b: in bit;
+		s0: out bit;
+		s1: out bit;
+		s2: out bit;
+		s3: out bit
+	);
+end decoder_2_4;
+
+architecture arq_decoder_2_4 of decoder_2_4 is
+	begin
+		-- abc
+		y <= ((not sel) and a) or (sel and b);
+	end arq_decoder_2_4;
+	

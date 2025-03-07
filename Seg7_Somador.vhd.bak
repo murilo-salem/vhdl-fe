@@ -1,0 +1,19 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.al;
+
+ENTITY Seg7_Somador IS
+	PORT(
+	a,b: in 
+	)
+
+
+
+begin 
+
+	somador: somador4b
+	port map (a=>a, b=>b, s =>n, c4 => c4);
+	
+	segmento7: seg7
+	port map(entrada => n, s => s)/
+	
+end arq_Seg7_somador;

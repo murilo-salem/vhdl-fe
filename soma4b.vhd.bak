@@ -1,0 +1,19 @@
+Library IEEE;
+USE IEEE.std_logic_1164.all;
+
+entity soma4b is
+	port (
+		a, b: in std_logic_vector(3 downto 0);
+		s: out std_logic_vector(3 downto 0);
+		cout: out std_logic
+	);
+end soma4b;
+
+
+Component MS 
+
+architecture arq_soma4b of soma4b is
+	begin
+		si <= ai xor bi xor ci;
+		ci1 <= (ai and bi) or (ai and ci) or (bi and ci);
+	end arq_soma4b;

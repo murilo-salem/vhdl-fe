@@ -1,0 +1,11 @@
+entity exemplo is
+port (
+	a: in bit;
+	b: out bit;
+);
+end exemplo;
+
+architecture arq_exemplo of exemplo is
+	begin
+		b <= a;
+	end arq_exemplo;
